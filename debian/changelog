@@ -1,3 +1,14 @@
+libpcap (1.7.4-2ubuntu0.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: pcapng reading buffer over-read.
+    - debian/patches/CVE-2019-15165-1.patch: do sanity checks on PHB
+      header length before allocating memory.
+    - debian/patches/CVE-2019-15165-2.patch: fix introduced format
+      warning
+    - CVE-2019-15165
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Thu, 21 Nov 2019 17:55:35 -0800
+
 libpcap (1.7.4-2) unstable; urgency=medium
 
   * Only override arch-dependent dh targets (closes: #806061).
